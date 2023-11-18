@@ -1,0 +1,83 @@
+.mainMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 350px;
+    height: 100%;
+    color: #fff;
+    transition: left 0.3s ease;
+    z-index: 99;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%);
+}
+
+.mainMenu:hover {
+    left: 0;
+    align-items: flex-start;
+    padding: 25px;
+}
+
+.menuContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.menuIcon {
+    font-size: 24px;
+    padding: 16px;
+    cursor: pointer;
+    text-align: end;
+}
+
+.mainMenu:hover .menuContent .menuRest span {
+    cursor: pointer;
+}
+
+.mainMenu .menuContent .menuRest,
+.menuItems {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.menuItems {
+    align-items: flex-end;
+}
+
+.mainMenu .menuContent .profileInfo span,
+.menuItem span,
+.mainMenu .menuContent .menuRest span
+{
+    display: none;
+}
+
+.mainMenu:hover .menuContent {
+    width: 60%;
+}
+
+.mainMenu:hover .menuContent .menuItems {
+    align-items: center;
+}
+
+.mainMenu:hover .menuContent .menuItems .menuItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.menuItem:hover {
+    color: rgba(255,255,255,0.7);
+    text-decoration: underline;
+}
+
+.mainMenu:hover .menuContent .menuItems .menuItem span,
+.mainMenu:hover .menuContent .menuRest span,
+.mainMenu:hover .menuContent .profileInfo span {
+    display: block;
+}

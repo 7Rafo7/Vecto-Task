@@ -1,0 +1,44 @@
+.cardSlider {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.5s;
+    width: 100%;
+}
+
+.card {
+    flex: 0 0 12%;
+    box-sizing: border-box;
+    text-align: center;
+    height: 200px;
+    padding: 1px;
+    cursor: pointer;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prevButton,
+.nextButton {
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #3498db;
+}
+
+.prevButton {
+    left: 10px;
+}
+
+.nextButton {
+    right: 10px;
+}
